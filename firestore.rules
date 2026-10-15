@@ -1,0 +1,119 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Global security primitives
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        (request.auth.token.email == 'adnanahmadali112233@gmail.com' && request.auth.token.email_verified == true) ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    function isValidUser(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.fullName is string && data.fullName.size() >= 2 && data.fullName.size() <= 100 &&
+             data.email is string && data.email.size() <= 120 &&
+             data.institutionName is string && data.institutionName.size() <= 150 &&
+             data.city is string && data.city.size() <= 80 &&
+             (!('phone' in data) || (data.phone is string && data.phone.size() <= 30)) &&
+             (!('deliveryAddress' in data) || (data.deliveryAddress is string && data.deliveryAddress.size() <= 300)) &&
+             (!('institutionType' in data) || (data.institutionType is string && data.institutionType.size() <= 80)) &&
+             (!('role' in data) || (data.role in ['school_buyer', 'dealer', 'admin']));
+    }
+
+    function isValidQuotation(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.customerName is string && data.customerName.size() >= 2 && data.customerName.size() <= 100 &&
+             data.institutionName is string && data.institutionName.size() <= 150 &&
+             data.email is string && data.email.size() <= 120 &&
+             data.phone is string && data.phone.size() <= 30 &&
+             data.city is string && data.city.size() <= 80 &&
+             data.status in ['Pending Review', 'Under Quotation', 'Approved', 'Dispatched'] &&
+             (!('totalEstimatedUnits' in data) || data.totalEstimatedUnits is number) &&
+             (!('notes' in data) || (data.notes is string && data.notes.size() <= 1000));
+    }
+
+    function isValidCustomInquiry(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.fullName is string && data.fullName.size() >= 2 && data.fullName.size() <= 100 &&
+             data.schoolName is string && data.schoolName.size() <= 150 &&
+             data.email is string && data.email.size() <= 120 &&
+             data.phone is string && data.phone.size() <= 30 &&
+             data.city is string && data.city.size() <= 80 &&
+             (!('notes' in data) || (data.notes is string && data.notes.size() <= 1000));
+    }
+
+    function isValidContactMessage(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.name is string && data.name.size() >= 2 && data.name.size() <= 100 &&
+             data.email is string && data.email.size() <= 120 &&
+             data.message is string && data.message.size() >= 3 && data.message.size() <= 1500;
+    }
+
+    // User profiles collection
+    match /users/{userId} {
+      allow get: if isValidId(userId) && isSignedIn() && (request.auth.uid == userId || isAdmin());
+      allow list: if isAdmin();
+      allow create: if isValidId(userId) && isSignedIn() && request.auth.uid == userId && isValidUser(incoming());
+      allow update: if isValidId(userId) && isSignedIn() && (request.auth.uid == userId || isAdmin()) && isValidUser(incoming()) &&
+                    incoming().diff(existing()).affectedKeys().hasOnly(['fullName', 'phone', 'institutionName', 'institutionType', 'city', 'deliveryAddress', 'role']);
+      allow delete: if isAdmin();
+    }
+
+    // Quotations collection
+    match /quotations/{quotationId} {
+      allow get: if isValidId(quotationId) && (isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid));
+      allow list: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow create: if isValidId(quotationId) && isValidQuotation(incoming()) &&
+                    (!('userId' in incoming()) || incoming().userId == null || (isSignedIn() && incoming().userId == request.auth.uid));
+      allow update: if isValidId(quotationId) && (
+        isAdmin() ||
+        (isSignedIn() && resource.data.userId == request.auth.uid && incoming().diff(existing()).affectedKeys().hasOnly(['notes', 'status']))
+      );
+      allow delete: if isAdmin();
+    }
+
+    // Custom inquiries
+    match /custom_inquiries/{inquiryId} {
+      allow get: if isValidId(inquiryId) && (isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid));
+      allow list: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow create: if isValidId(inquiryId) && isValidCustomInquiry(incoming()) &&
+                    (!('userId' in incoming()) || incoming().userId == null || (isSignedIn() && incoming().userId == request.auth.uid));
+      allow delete: if isAdmin();
+    }
+
+    // Contact form submissions
+    match /contact_messages/{messageId} {
+      allow get, list: if isAdmin();
+      allow create: if isValidId(messageId) && isValidContactMessage(incoming());
+      allow delete: if isAdmin();
+    }
+
+    // Test connection doc
+    match /test/{docId} {
+      allow read: if true;
+    }
+  }
+}

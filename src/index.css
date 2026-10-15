@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-brand-blue: #0b60d4;
+  --color-brand-navy: #0e2954;
+  --color-brand-orange: #f97316;
+  --color-brand-amber: #ff7f00;
+  --color-brand-dark: #0b192c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Subtle breathing animation for Floating WhatsApp CTA */
+@keyframes whatsapp-breathe {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 8px 20px -3px rgba(37, 211, 102, 0.35), 0 4px 6px -4px rgba(37, 211, 102, 0.2);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 16px 30px -4px rgba(37, 211, 102, 0.55), 0 6px 10px -3px rgba(37, 211, 102, 0.3);
+  }
+}
+
+.animate-whatsapp-breathe {
+  animation: whatsapp-breathe 2.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-whatsapp-breathe {
+    animation: none;
+  }
+}
+

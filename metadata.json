@@ -1,0 +1,7 @@
+{
+  "name": "Decent School Furniture",
+  "description": "Manufacturer and wholesale supplier of durable, modern school desks, classroom chairs, institutional benches, teacher tables, and custom educational furniture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

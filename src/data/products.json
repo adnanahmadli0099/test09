@@ -1,0 +1,386 @@
+[
+  {
+    "id": "dsf-001",
+    "name": "Classic Single Student Desk & Chair Set",
+    "slug": "student-desk-chair-single",
+    "category": "student-desks",
+    "subtitle": "Durable and ergonomic design for everyday classroom use.",
+    "description": "Engineered specifically for school environments, this single-student desk and chair combo features a heavy-duty powder-coated steel frame, scratch-resistant laminated beech tabletop with pencil groove, integrated wire book-basket, and an ergonomic polypropylene contoured seat supporting proper spinal posture during long study hours.",
+    "primaryImage": "/src/assets/images/student_desk_chair_1792007659142.jpg",
+    "galleryImages": [
+      "/src/assets/images/student_desk_chair_1792007659142.jpg",
+      "/src/assets/images/hero_classroom_spaces_1792007659376.jpg"
+    ],
+    "dimensions": {
+      "widthCm": 60,
+      "depthCm": 45,
+      "heightCm": 75,
+      "customizable": true
+    },
+    "frameMaterial": "16-Gauge MS Tubular Steel with Anti-Corrosion Powder Coating",
+    "topMaterial": "High-Pressure Laminated MDF with Impact-Resistant PVC Edge Banding",
+    "colorOptions": ["Royal Blue", "Forest Green", "Amber Orange", "Charcoal Grey"],
+    "warrantyYears": 5,
+    "gradeLevels": ["Primary (Grades 1-5)", "Middle School (Grades 6-8)", "High School (Grades 9-12)"],
+    "minOrderQuantity": 10,
+    "leadTimeDays": 7,
+    "isFeatured": true,
+    "isBestseller": true,
+    "estimatedPriceRange": {
+      "min": 4500,
+      "max": 6200,
+      "currency": "PKR"
+    },
+    "bulkDiscounts": [
+      { "minQuantity": 25, "discountPercent": 5 },
+      { "minQuantity": 100, "discountPercent": 10 },
+      { "minQuantity": 300, "discountPercent": 15 }
+    ],
+    "specifications": {
+      "Desk Dimensions": "600mm (W) x 450mm (D) x 750mm (H)",
+      "Chair Seat Height": "440mm standard (adjustable height optional)",
+      "Book Basket": "Heavy duty wire mesh rack under desk surface",
+      "Floor Protectors": "Non-marking nylon floor glides with leveling adjustment",
+      "Weight Capacity": "Tested for up to 140 kg static load"
+    },
+    "features": [
+      "Heavy-duty scratch-resistant laminate surface",
+      "Ergonomic lumbar support to prevent student fatigue",
+      "Rounded corners for classroom safety",
+      "Pencil groove and integrated backpack hanger hook",
+      "Stackable chair design for easy classroom cleaning"
+    ]
+  },
+  {
+    "id": "dsf-002",
+    "name": "Executive Teacher Table with Locking Drawers",
+    "slug": "executive-teacher-table",
+    "category": "teacher-tables",
+    "subtitle": "Spacious and practical table with storage options.",
+    "description": "Designed for educators, instructors, and faculty offices, the Decent Executive Teacher Table pairs an expansive scratch-proof work surface with a secure three-drawer pedestal featuring a central master lock. Built with thick oak-grain melamine board and reinforced steel leg bracing for maximum stability.",
+    "primaryImage": "/src/assets/images/teacher_executive_desk_1792007660688.jpg",
+    "galleryImages": [
+      "/src/assets/images/teacher_executive_desk_1792007660688.jpg"
+    ],
+    "dimensions": {
+      "widthCm": 120,
+      "depthCm": 65,
+      "heightCm": 76,
+      "customizable": true
+    },
+    "frameMaterial": "Cold-Rolled Steel Legs with Leveling Feet",
+    "topMaterial": "18mm Pre-Laminated Particle Board with 2mm PVC Edge",
+    "colorOptions": ["Natural Oak", "Warm Teak", "Light Walnut", "Classic Grey"],
+    "warrantyYears": 5,
+    "gradeLevels": ["Teacher & Admin"],
+    "minOrderQuantity": 2,
+    "leadTimeDays": 10,
+    "isFeatured": true,
+    "isBestseller": true,
+    "estimatedPriceRange": {
+      "min": 14500,
+      "max": 19500,
+      "currency": "PKR"
+    },
+    "bulkDiscounts": [
+      { "minQuantity": 10, "discountPercent": 8 },
+      { "minQuantity": 25, "discountPercent": 12 }
+    ],
+    "specifications": {
+      "Desk Dimensions": "1200mm (W) x 650mm (D) x 760mm (H)",
+      "Storage": "3-drawer pedestal with metal telescopic runners and lock",
+      "Modesty Panel": "Full height privacy modesty panel included",
+      "Cable Grommet": "Integrated dual desktop grommets for laptop/cables",
+      "Load Rating": "180 kg distributed load capacity"
+    },
+    "features": [
+      "Master-keyed lockable storage for exam papers and records",
+      "Smooth silent ball-bearing drawer slides",
+      "Cable management access ports",
+      "Heavy duty leveling glides for uneven classroom floors"
+    ]
+  },
+  {
+    "id": "dsf-003",
+    "name": "Ergonomic Classroom Chairs (Stackable Pack)",
+    "slug": "classroom-chairs-stackable",
+    "category": "classroom-furniture",
+    "subtitle": "Comfortable and stackable for flexible classrooms.",
+    "description": "The ultimate high-density classroom seating solution. Manufactured with virgin non-toxic polypropylene shells featuring ventilated ribbing for thermal comfort and flexibility. Stacks up to 10 chairs high for rapid floor clearing during school assemblies, exams, and cleaning.",
+    "primaryImage": "/src/assets/images/classroom_modular_tables_1792007659164.jpg",
+    "galleryImages": [
+      "/src/assets/images/classroom_modular_tables_1792007659164.jpg",
+      "/src/assets/images/student_desk_chair_1792007659142.jpg"
+    ],
+    "dimensions": {
+      "widthCm": 48,
+      "depthCm": 48,
+      "heightCm": 82,
+      "customizable": false
+    },
+    "frameMaterial": "19mm Diameter Tubular Steel with Chrome/Powder Finish",
+    "topMaterial": "100% Virgin Virgin High-Density Polypropylene (UV-Stabilized)",
+    "colorOptions": ["Cobalt Blue", "Ruby Red", "Sun Yellow", "Emerald Green"],
+    "warrantyYears": 7,
+    "gradeLevels": ["Primary (Grades 1-5)", "Middle School (Grades 6-8)", "High School (Grades 9-12)", "College & University"],
+    "minOrderQuantity": 20,
+    "leadTimeDays": 5,
+    "isFeatured": true,
+    "isBestseller": true,
+    "estimatedPriceRange": {
+      "min": 1850,
+      "max": 2600,
+      "currency": "PKR"
+    },
+    "bulkDiscounts": [
+      { "minQuantity": 50, "discountPercent": 6 },
+      { "minQuantity": 200, "discountPercent": 12 },
+      { "minQuantity": 500, "discountPercent": 18 }
+    ],
+    "specifications": {
+      "Seat Height": "450mm standard adult / senior student",
+      "Stackability": "Safely stacks up to 10 chairs vertically",
+      "Weight": "3.2 kg per chair",
+      "Shell Thickness": "5.5mm reinforced rib design"
+    },
+    "features": [
+      "Contoured lumbar support prevents student slouching",
+      "High UV resistance prevents fading under classroom lights or sun",
+      "Anti-tip curved rear frame geometry",
+      "Easy-grip cut-out handle in backrest for effortless moving"
+    ]
+  },
+  {
+    "id": "dsf-004",
+    "name": "Heavy-Duty Dual Seater School Bench & Desk",
+    "slug": "heavy-duty-school-bench",
+    "category": "school-benches",
+    "subtitle": "Strong and reliable for long-term use.",
+    "description": "Built for rigorous institutional endurance, this traditional dual-seater classroom bench connects two seated students with an integrated sloping writing surface, full-length under-desk book rack, and solid timber slats bolted securely onto industrial-strength box steel framing.",
+    "primaryImage": "/src/assets/images/durable_school_bench_1792007660124.jpg",
+    "galleryImages": [
+      "/src/assets/images/durable_school_bench_1792007660124.jpg"
+    ],
+    "dimensions": {
+      "widthCm": 105,
+      "depthCm": 85,
+      "heightCm": 75,
+      "customizable": true
+    },
+    "frameMaterial": "25mm x 25mm 16-Gauge MS Square Box Steel",
+    "topMaterial": "Seasoned Pine Wood / Melamine Plywood with Rounded Bullnose",
+    "colorOptions": ["Natural Pine Wood", "Honey Teak Finish", "Dark Walnut"],
+    "warrantyYears": 10,
+    "gradeLevels": ["Primary (Grades 1-5)", "Middle School (Grades 6-8)", "High School (Grades 9-12)"],
+    "minOrderQuantity": 10,
+    "leadTimeDays": 7,
+    "isFeatured": true,
+    "isBestseller": false,
+    "estimatedPriceRange": {
+      "min": 6800,
+      "max": 8900,
+      "currency": "PKR"
+    },
+    "bulkDiscounts": [
+      { "minQuantity": 30, "discountPercent": 7 },
+      { "minQuantity": 100, "discountPercent": 14 }
+    ],
+    "specifications": {
+      "Bench Capacity": "2 Seater with individual backrest support",
+      "Desk Angle": "5-degree subtle slant for comfortable ergonomic handwriting",
+      "Frame Finish": "Electrostatically applied thermoset epoxy powder coat",
+      "Joints": "100% Robotically welded MIG joints with zero play"
+    },
+    "features": [
+      "Virtually indestructible all-welded steel chassis",
+      "Continuous book shelf running entire desk width",
+      "Floor anchoring holes pre-drilled for earthquake/safety code",
+      "Rounded edge profiles to prevent student snagging"
+    ]
+  },
+  {
+    "id": "dsf-005",
+    "name": "Modular Trapezoid Collaborative Group Table",
+    "slug": "modular-trapezoid-group-table",
+    "category": "classroom-furniture",
+    "subtitle": "Reconfigurable tables for STEM, group work and modern learning.",
+    "description": "Unleash dynamic classroom layouts. Five or six trapezoidal tables assemble in seconds into a circular collaboration pod, horseshoe discussion ring, or straight conference line. Adjustable height steel legs accommodate students of all grades.",
+    "primaryImage": "/src/assets/images/classroom_modular_tables_1792007659164.jpg",
+    "galleryImages": [
+      "/src/assets/images/classroom_modular_tables_1792007659164.jpg",
+      "/src/assets/images/hero_classroom_spaces_1792007659376.jpg"
+    ],
+    "dimensions": {
+      "widthCm": 120,
+      "depthCm": 60,
+      "heightCm": 72,
+      "customizable": true
+    },
+    "frameMaterial": "Telescoping Tubular Steel Legs with Dual Locking Bolts",
+    "topMaterial": "25mm Chemical & Stain-Resistant HPL Board",
+    "colorOptions": ["Beech Woodgrain", "Cobalt Blue", "Bright White", "Canary Yellow"],
+    "warrantyYears": 5,
+    "gradeLevels": ["Primary (Grades 1-5)", "Middle School (Grades 6-8)", "High School (Grades 9-12)", "College & University"],
+    "minOrderQuantity": 6,
+    "leadTimeDays": 7,
+    "isFeatured": false,
+    "isBestseller": true,
+    "estimatedPriceRange": {
+      "min": 8500,
+      "max": 11500,
+      "currency": "PKR"
+    },
+    "bulkDiscounts": [
+      { "minQuantity": 12, "discountPercent": 8 },
+      { "minQuantity": 36, "discountPercent": 15 }
+    ],
+    "specifications": {
+      "Shape": "Trapezoid (converts to hex circle of 6 or straight rows)",
+      "Height Range": "Adjustable from 550mm to 760mm in 25mm increments",
+      "Mobility": "Dual locking heavy-duty skate casters on front legs"
+    },
+    "features": [
+      "Rapid reconfiguration for modern collaborative pedagogy",
+      "Dry-erase writable laminate top surface available upon request",
+      "Heavy duty polyurethane seamless edging that cannot be peeled"
+    ]
+  },
+  {
+    "id": "dsf-006",
+    "name": "High-Back Mesh Staff & Principal Ergonomic Chair",
+    "slug": "high-back-mesh-staff-chair",
+    "category": "office-furniture",
+    "subtitle": "Supportive seating for administrative staff, faculty and principals.",
+    "description": "Engineered for 8+ hours of concentrated administrative productivity. Features breathable Korean elastomeric mesh, multi-directional 3D armrests, dynamic sync-tilt reclining mechanism, pneumatic class-4 gas lift, and integrated adjustable lumbar support.",
+    "primaryImage": "/src/assets/images/office_ergonomic_chair_1792007692704.jpg",
+    "galleryImages": [
+      "/src/assets/images/office_ergonomic_chair_1792007692704.jpg"
+    ],
+    "dimensions": {
+      "widthCm": 64,
+      "depthCm": 60,
+      "heightCm": 120,
+      "customizable": false
+    },
+    "frameMaterial": "Cast Aluminum 5-Star Base & Reinforced Nylon Spine",
+    "topMaterial": "High-Density Molded Foam Seat Cushion with Breathable Mesh Back",
+    "colorOptions": ["Classic Jet Black", "Slate Grey"],
+    "warrantyYears": 3,
+    "gradeLevels": ["Teacher & Admin"],
+    "minOrderQuantity": 2,
+    "leadTimeDays": 3,
+    "isFeatured": false,
+    "isBestseller": true,
+    "estimatedPriceRange": {
+      "min": 16500,
+      "max": 24000,
+      "currency": "PKR"
+    },
+    "bulkDiscounts": [
+      { "minQuantity": 5, "discountPercent": 7 },
+      { "minQuantity": 20, "discountPercent": 14 }
+    ],
+    "specifications": {
+      "Mechanism": "Synchronized multi-lock tilt with tension adjuster",
+      "Gas Lift": "BIFMA-Certified Class 4 Hydraulic Cylinder",
+      "Casters": "60mm PU Twin-Wheel noise-reducing glides"
+    },
+    "features": [
+      "Headrest height and tilt adjustable for cervical relief",
+      "Waterfall seat front relieves pressure behind the knees",
+      "Heavy duty aluminum base rated for 150 kg"
+    ]
+  },
+  {
+    "id": "dsf-007",
+    "name": "Heavy-Duty Multi-Tier Steel Student Lockers",
+    "slug": "heavy-duty-student-lockers",
+    "category": "custom-furniture",
+    "subtitle": "Safe, ventilated and color-customized institutional storage.",
+    "description": "Constructed from 20-gauge cold-rolled steel sheets with electrostatic powder coating. Built with louvered ventilation slats, internal coat hooks, hat shelf, and dual-point locking mechanisms compatible with master keys or padlock hasps.",
+    "primaryImage": "/src/assets/images/school_lockers_storage_1792007692249.jpg",
+    "galleryImages": [
+      "/src/assets/images/school_lockers_storage_1792007692249.jpg"
+    ],
+    "dimensions": {
+      "widthCm": 180,
+      "depthCm": 45,
+      "heightCm": 180,
+      "customizable": true
+    },
+    "frameMaterial": "20-Gauge (0.9mm) Cold Rolled Prime CRCA Steel",
+    "topMaterial": "Electrostatic Anti-Scratch Powder Coating",
+    "colorOptions": ["Multicolor Primary (Blue, Yellow, Red, Green)", "Navy & Silver", "School House Red"],
+    "warrantyYears": 5,
+    "gradeLevels": ["Middle School (Grades 6-8)", "High School (Grades 9-12)", "College & University"],
+    "minOrderQuantity": 2,
+    "leadTimeDays": 14,
+    "isFeatured": false,
+    "isBestseller": false,
+    "estimatedPriceRange": {
+      "min": 32000,
+      "max": 48000,
+      "currency": "PKR"
+    },
+    "bulkDiscounts": [
+      { "minQuantity": 5, "discountPercent": 10 },
+      { "minQuantity": 15, "discountPercent": 18 }
+    ],
+    "specifications": {
+      "Configuration": "6-Door Bay (2x3 or 1x6 modules available)",
+      "Ventilation": "Die-pressed stamped louvers top & bottom of each door",
+      "Security": "Cam lock with 2 keys per door + master key override option"
+    },
+    "features": [
+      "Custom institutional school color matching",
+      "Anti-slam rubber bumpers inside door frame for quiet operation",
+      "Full-length continuous piano hinges resist forced tampering"
+    ]
+  },
+  {
+    "id": "dsf-008",
+    "name": "Institutional Library Study Table & Bench Suite",
+    "slug": "library-study-table-suite",
+    "category": "classroom-furniture",
+    "subtitle": "Spacious reading and research tables for modern media centers.",
+    "description": "Designed for silent study spaces, university reading rooms, and school libraries. Solid wooden perimeter framework with integrated cable management troughs, built-in soft-touch power connectivity ports, and acoustic desk partition dividers.",
+    "primaryImage": "/src/assets/images/school_library_interior_1792007693659.jpg",
+    "galleryImages": [
+      "/src/assets/images/school_library_interior_1792007693659.jpg"
+    ],
+    "dimensions": {
+      "widthCm": 240,
+      "depthCm": 110,
+      "heightCm": 75,
+      "customizable": true
+    },
+    "frameMaterial": "Solid Hardwood Perimeter Frame with Heavy Steel Spreader",
+    "topMaterial": "High-Pressure Textured Oak Laminate Top",
+    "colorOptions": ["Natural Scandinavian Oak", "Dark Teak", "Espresso"],
+    "warrantyYears": 7,
+    "gradeLevels": ["High School (Grades 9-12)", "College & University"],
+    "minOrderQuantity": 2,
+    "leadTimeDays": 12,
+    "isFeatured": false,
+    "isBestseller": false,
+    "estimatedPriceRange": {
+      "min": 38000,
+      "max": 54000,
+      "currency": "PKR"
+    },
+    "bulkDiscounts": [
+      { "minQuantity": 4, "discountPercent": 8 },
+      { "minQuantity": 10, "discountPercent": 15 }
+    ],
+    "specifications": {
+      "Seating Capacity": "Comfortably seats 6 to 8 students with laptops and textbooks",
+      "Power Connectivity": "Center raceway with flip-top power socket grommets",
+      "Privacy": "Optional center frosted acrylic or fabric acoustic divider panel"
+    },
+    "features": [
+      "Glare-resistant matte laminate surface protects student eyesight",
+      "Concealed wire raceways keep floors clear of tripping hazards",
+      "Heavy mass structure minimizes table vibration"
+    ]
+  }
+]
